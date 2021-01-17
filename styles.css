@@ -32,9 +32,10 @@ body{
     flex-direction: column;
     background-color: white;
     
-    position: absolute;
-    top:15%;
-    right:37%;
+    position: relative;
+    
+    margin-top:10%;
+    margin-left:35%;
     border-bottom-left-radius: 1rem;
     
     border-bottom-right-radius: 1rem;
