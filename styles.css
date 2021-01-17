@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; color: white;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body{
@@ -26,15 +26,15 @@ body{
 }
 
 #card-container{
-    height:400px;
+    height:450px;
     width:400px;
     display:flex;
     flex-direction: column;
     background-color: white;
     
     position: absolute;
-    top:20%;
-    right:38%;
+    top:25%;
+    right:37%;
     border-bottom-left-radius: 1rem;
     
     border-bottom-right-radius: 1rem;
@@ -52,15 +52,17 @@ body{
 .victor-image{
     border-radius:50%;
     position:absolute;
-    top:20%;
-    right:37%;
+    top:18%;
+    right:35%;
     border: 7px solid white;
+    height:25%;
+    
     
 }
 
 #basic-info{
     padding-left:1rem;
-    padding-top:0.5rem;
+    padding-top:2rem;
     align-items: center;
     margin-left:32%;
     font-size: 1.1rem;;
