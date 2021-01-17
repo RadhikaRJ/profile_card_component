@@ -8,7 +8,8 @@ body{
 }
 .container{
    display: flex;
-    
+  
+  
 }
   
 .top-left-img{
@@ -25,7 +26,7 @@ body{
 }
 
 #card-container{
-    height:450px;
+    height:400px;
     width:400px;
     display:flex;
     flex-direction: column;
@@ -68,9 +69,13 @@ p{
     padding-top:1rem;
     margin-top:15%;
 }
-hr{
-    z-index:1;
-    color:black;
+.container hr{
+    
+   display:flex;
+   overflow:visible;
+   margin:0%;
+   color:gray;
+   opacity: 0.5;
     
 }
 #location{
