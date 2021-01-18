@@ -39,77 +39,88 @@ body{
     left:50%;
 }
 
-#card-container{
-    height:60vh;
-    width:55vh;
+main{
+    display:flex;
+    justify-content:center;
+    height:100vh;
+}
+
+main section{
     display:flex;
     flex-direction: column;
-    background-color: white;
-    
-    position: relative;
-    
-    margin-top:20vh;
-    margin-left:70vh;
-    border-bottom-left-radius: 1rem;
-    
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    
-  }
+    justify-content: center;
+}
+
+main section article{
+    min-width: 330px;
+    min-height: 400px;
+    border-radius: 10px;
+    position:relative;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
   .card-pattern-top{
+    height:30%;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    background-color: transparent;
+    background-image: url(/images/bg-pattern-card.svg);
   }
 
 
 .victor-image{
+    display:block;
     border-radius:50%;
-    position:absolute;
-    top:18%;
-    right:35%;
+    position:relative;
+    top:60%;
     border: 7px solid white;
-    height:25%;
-    
-    
+    margin:auto;
+        
 }
 
-#basic-info{
-    padding-left:1rem;
-    padding-top:2rem;
-    align-items: center;
-    margin-left:32%;
-    font-size: 1.1rem;;
+.card-bottom{
+    background-color: white;
+    height:70%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
-p{
-    padding-top:1rem;
-    margin-top:15%;
+
+.name{
+    padding-top: 10vh;
+    text-align: center;
+    font-size:18px;
+    font-weight: bold;
 }
-.container hr{
-    
-   display:flex;
-   overflow:visible;
-   margin:0%;
-   color:gray;
-   opacity: 0.5;
-    
+
+.name .age{
+    color:var(--gray-color);
+    font-weight:lighter;
+    padding-left:0.5rem;
 }
-#location{
-    padding:2rem;
-    margin-top:5%;
-    font-size:medium;
+
+.place{
+    color: var(--gray-color);
+    text-align: center;
+    padding-top: 1rem;
 }
-.card-content{
-    margin-left:10%;
+
+.details{
+    position:relative;
+    top:20%;
+    height:20%;
+    border-top:1px solid hsl(225,8%,80%);
     display:flex;
-    flex-direction:row;
+    justify-content:space-evenly;
 }
-.box{
-    padding:1.5rem;
+
+.followers, .likes, .photos{
+    margin-top: 1.5rem;
+    text-align:center;
+    font-weight:bold;
+    font-size:18px;
 }
-.box-detail{
-    margin-top:5%;
+
+.label{
+    color:var(--gray-color);
     font-size:small;
-    letter-spacing: 1px;
+    text-align: center;
 }
