@@ -2,28 +2,41 @@
 .attribution { font-size: 11px; text-align: center; color: white;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
-html, body {margin: 0; height: 100%; overflow: hidden}
-body{
-    background: hsl(185, 75%, 39%);
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
     font-family: 'Kumbh Sans', sans-serif;
 }
-.container{
-   display: flex;
-  
-  
-}
-  
-.top-left-img{
-   position: absolute;
-   bottom:35vh; 
-   right:115vh;
+
+:root{
+    --gray-color : hsl(0,0%,59%);
 }
 
-.bottom-right-img{
+
+html, body {
+
+    position:relative;
+    height: 100%; 
+    overflow: hidden;
+}
+
+body{
+    background: hsl(185, 75%, 39%);    
+}
+
+.top-left-img, .bottom-right-img{
     position:absolute;
-    top:60vh;
-    left:90vh;
-       
+}
+
+.top-left-img{  
+    bottom:50%;
+    right:50%; 
+}
+
+.bottom-right-img{   
+    top:50%;
+    left:50%;
 }
 
 #card-container{
@@ -44,7 +57,7 @@ body{
     border-top-left-radius: 1rem;
     
   }
-  .card-pattern{
+  .card-pattern-top{
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     background-color: transparent;
